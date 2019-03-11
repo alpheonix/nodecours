@@ -15,6 +15,8 @@ app.get('/hello', (req, res) => {
         res.send('Nous sommes à Paris');
       }else if(request.msg == "meteo"){
         res.send('Il fait beau');
+      }else{
+          res.send("nop")
       }
   });
 
