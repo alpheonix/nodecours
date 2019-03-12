@@ -4,7 +4,7 @@ const port = 3000;
 console.log("Hello World");
 
 app.get('/hello', (req, res) => {    
-    res.send('hello world');
+    res.send('Hello World!');
   });
 
   app.use(express.json());
