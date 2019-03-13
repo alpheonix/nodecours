@@ -48,7 +48,3 @@ Afin de le déployer en local sur une machine modifier la variable url par votre
 const url = "http://localhost:27017/chatbot";
 ```
 
-## Créer avec
-
-* [Express](https://expressjs.com/en/api.html) - The web framework used
-
