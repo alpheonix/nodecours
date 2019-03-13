@@ -7,7 +7,7 @@ var app = express();
 var port = process.env.PORT || 3000;
 app.use(express.json());
   // Connection URL
-  const url = MONGODB_URI;
+  const url = process.env.MONGODB_URI;
   // Database Name
   const dbName = 'chat-bot';
 
@@ -133,6 +133,7 @@ app.post('/chat', async (req, res) => {
   }
 } catch (err) {
   console.log(err.stack);
+  res.send("error")
 }
   client.close();
 });
